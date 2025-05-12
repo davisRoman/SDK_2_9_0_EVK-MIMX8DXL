@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.8 http://mcuxpresso.nxp.com/XSD/mex_configuration_1.8.xsd" uuid="e2b1933e-7a7e-4770-83ba-895a52e2ec73" version="1.8" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>MIMX8DL1xxxFZ</processor>
+      <package>MIMX8DL1AVNFZ</package>
+      <board>MIMX8DXL-EVK</board>
+      <mcu_data>ksdk2_0</mcu_data>
+      <cores selected="">
+         <core name="Cortex-A35(core #0)" id="a35_0" description="A35 core0"/>
+         <core name="Cortex-A35(core #1)" id="a35_1" description="A35 core1"/>
+         <core name="Cortex-M4F" id="m4" description="M4 core"/>
+      </cores>
+      <description></description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+      <generate_extended_information>false</generate_extended_information>
+      <generate_code_modified_registers_only>false</generate_code_modified_registers_only>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="8.0" enabled="true" update_project_code="true">
+         <pins_profile>
+            <processor_version>0.8.0</processor_version>
+            <power_domains/>
+         </pins_profile>
+         <functions_list>
+            <function name="BOARD_InitPins">
+               <description>Configures pin routing and optionally pin electrical features.</description>
+               <options>
+                  <callFromInitBoot>false</callFromInitBoot>
+                  <coreID>m4</coreID>
+               </options>
+               <dependencies/>
+               <pins>
+                  <pin peripheral="ADMA__FLEXCAN2" signal="flexcan_tx" pin_num="AL33" pin_signal="FLEXCAN2_TX">
+                     <pin_features>
+                        <pin_feature name="sw_config" value="sw_config_0"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="ADMA__FLEXCAN2" signal="flexcan_rx" pin_num="AL35" pin_signal="FLEXCAN2_RX">
+                     <pin_features>
+                        <pin_feature name="sw_config" value="sw_config_0"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="ADMA__I2C3" signal="i2c_scl" pin_num="AP18" pin_signal="SPI1_SDI">
+                     <pin_features>
+                        <pin_feature name="sw_config" value="sw_config_0"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="ADMA__I2C3" signal="i2c_sda" pin_num="AR15" pin_signal="SPI1_CS0">
+                     <pin_features>
+                        <pin_feature name="sw_config" value="sw_config_0"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="M40__UART0" signal="uart_rx" pin_num="AC33" pin_signal="ADC_IN2">
+                     <pin_features>
+                        <pin_feature name="sw_config" value="sw_config_0"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="M40__UART0" signal="uart_tx" pin_num="AF34" pin_signal="ADC_IN3">
+                     <pin_features>
+                        <pin_feature name="sw_config" value="sw_config_0"/>
+                     </pin_features>
+                  </pin>
+               </pins>
+            </function>
+         </functions_list>
+      </pins>
+      <ddr name="DDR" version="1.0" enabled="true" update_project_code="true">
+         <components/>
+      </ddr>
+   </tools>
+</configuration>
