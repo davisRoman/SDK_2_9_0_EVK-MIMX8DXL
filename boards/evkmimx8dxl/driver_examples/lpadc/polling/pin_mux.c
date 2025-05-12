@@ -58,12 +58,12 @@ void BOARD_InitPins(sc_ipc_t ipc)                          /*!< Function assigne
 {
   sc_err_t err = SC_ERR_NONE;
 
-  err = sc_pad_set_all(ipc, BOARD_INITPINS_ADC_IN2_PIN_FUNCTION_ID, 1U, SC_PAD_CONFIG_NORMAL, SC_PAD_ISO_OFF, 0x0 ,SC_PAD_WAKEUP_OFF);/* IOMUXD_ADC_IN2 register modification value */
+  err = sc_pad_set_all(ipc, BOARD_INITPINS_SCU_GPIO0_00_PIN_FUNCTION_ID, 2U, SC_PAD_CONFIG_NORMAL, SC_PAD_ISO_OFF, 0x0 ,SC_PAD_WAKEUP_OFF);/* IOMUXD_SCU_GPIO0_00 register modification value */
   if (SC_ERR_NONE != err)
   {
       assert(false);
   }
-  err = sc_pad_set_all(ipc, BOARD_INITPINS_ADC_IN3_PIN_FUNCTION_ID, 1U, SC_PAD_CONFIG_NORMAL, SC_PAD_ISO_OFF, 0x0 ,SC_PAD_WAKEUP_OFF);/* IOMUXD_ADC_IN3 register modification value */
+  err = sc_pad_set_all(ipc, BOARD_INITPINS_SCU_GPIO0_01_PIN_FUNCTION_ID, 2U, SC_PAD_CONFIG_NORMAL, SC_PAD_ISO_OFF, 0x0 ,SC_PAD_WAKEUP_OFF);/* IOMUXD_SCU_GPIO0_01 register modification value */
   if (SC_ERR_NONE != err)
   {
       assert(false);

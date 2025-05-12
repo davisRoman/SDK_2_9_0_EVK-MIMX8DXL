@@ -42,6 +42,24 @@
 #define BOARD_INITPINS_LCD_17_LABEL                                     "LCD_17"   /*!< Label */
 #define BOARD_INITPINS_LCD_17_NAME                                      "LCD_17"   /*!< Identifier */
 
+/* SCU_GPIO0_00 (number AR27) */
+/* Routed pin properties */
+#define BOARD_INITPINS_SCU_GPIO0_00_PERIPHERAL                              M40__UART0   /*!< Peripheral name */
+#define BOARD_INITPINS_SCU_GPIO0_00_SIGNAL                                     uart_rx   /*!< Signal name */
+#define BOARD_INITPINS_SCU_GPIO0_00_PIN_NAME                              SCU_GPIO0_00   /*!< Routed pin name */
+#define BOARD_INITPINS_SCU_GPIO0_00_PIN_FUNCTION_ID                  SC_P_SCU_GPIO0_00   /*!< Pin function id */
+#define BOARD_INITPINS_SCU_GPIO0_00_LABEL                               "SCU_GPIO0_00"   /*!< Label */
+#define BOARD_INITPINS_SCU_GPIO0_00_NAME                                "SCU_GPIO0_00"   /*!< Identifier */
+
+/* SCU_GPIO0_01 (number AP26) */
+/* Routed pin properties */
+#define BOARD_INITPINS_SCU_GPIO0_01_PERIPHERAL                              M40__UART0   /*!< Peripheral name */
+#define BOARD_INITPINS_SCU_GPIO0_01_SIGNAL                                     uart_tx   /*!< Signal name */
+#define BOARD_INITPINS_SCU_GPIO0_01_PIN_NAME                              SCU_GPIO0_01   /*!< Routed pin name */
+#define BOARD_INITPINS_SCU_GPIO0_01_PIN_FUNCTION_ID                  SC_P_SCU_GPIO0_01   /*!< Pin function id */
+#define BOARD_INITPINS_SCU_GPIO0_01_LABEL                               "SCU_GPIO0_01"   /*!< Label */
+#define BOARD_INITPINS_SCU_GPIO0_01_NAME                                "SCU_GPIO0_01"   /*!< Identifier */
+
 /*!
  * @addtogroup pin_mux
  * @{
